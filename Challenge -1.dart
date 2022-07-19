@@ -67,8 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             children: [
               Container(
-                padding:  EdgeInsets.only(left:10,right: 70,top: 10,bottom: 80),
-                margin: EdgeInsets.only(left: 20,right: 20, top: 50, bottom: 20),
+                padding:  EdgeInsets.only(left:8,right: 70,top: 16,bottom: 80),
+                margin: EdgeInsets.only(left: 16,right: 50, top: 16, bottom: 50),
                 decoration: BoxDecoration(
                   border:Border.all(color: Colors.redAccent,width:4),
                   borderRadius: BorderRadius.circular(20),
@@ -77,21 +77,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 child: Text("Health",
-                    style: TextStyle(fontSize: 20)),
+                    style: TextStyle(fontSize: 20,color: Colors.white)),
               ),
 
               Container(
-                padding:  EdgeInsets.only(left:10,right: 55,top: 10,bottom: 80),
-                margin: EdgeInsets.only(left: 20,right: 20, top: 50, bottom: 20),
+                padding:  EdgeInsets.only(left:8,right: 55,top: 16,bottom: 80),
+                margin: EdgeInsets.only(left:0,right: 16, top: 16, bottom: 50),
                 decoration: BoxDecoration(
-                  border:Border.all(color: Colors.deepOrangeAccent,width:4),
+                  border: Border.all(color: Colors.orange,width: 4),
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
-                    BoxShadow(color: Colors.deepOrangeAccent),
+                    BoxShadow(color: Colors.orange)
                   ],
                 ),
                 child: Text("Wellness",
-                    style: TextStyle(fontSize: 20)),
+                    style: TextStyle(fontSize: 20,color: Colors.white)),
               ),
             ],
           ),
@@ -99,8 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             children: [
               Container(
-                padding:  EdgeInsets.only(left:10,right: 65,top: 10,bottom: 80),
-                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 30),
+                padding:  EdgeInsets.only(left:8,right: 65,top: 16,bottom: 80),
+                margin: EdgeInsets.only(top: 0, right: 50,left: 16,bottom: 16),
                 decoration: BoxDecoration(
                   border:Border.all(color: Colors.blueGrey,width:4),
                   borderRadius: BorderRadius.circular(20),
@@ -109,24 +109,29 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 child: Text("Politics",
-                    style: TextStyle(fontSize: 20)),
+                    style: TextStyle(fontSize: 20,color: Colors.white)),
               ),
 
-              Container(
-                padding:  EdgeInsets.only(left:10,right: 80,top: 10,bottom: 80),
-                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 30),
-                decoration: BoxDecoration(
-                  border:Border.all(color: Colors.purpleAccent,width:4),
+
+              Expanded(
+                child: Container(
+                  padding:  EdgeInsets.only(left:8,right: 80,top: 16,bottom: 80),
+                  margin: EdgeInsets.only(top: 0, right: 16,left: 0,bottom: 16),
+                  decoration: BoxDecoration(
+                  border:Border.all(color: Colors.green,width:4),
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
-                    BoxShadow(color: Colors.purpleAccent),
+                  BoxShadow(color: Colors.green),
                   ],
+                  ),
+                  child: Text("Travel",
+                      style: TextStyle(fontSize: 20,color: Colors.white)),
                 ),
-                child: Text("Travel",
-                    style: TextStyle(fontSize: 20)),
               ),
             ],
           ),
+
+
         ],
       ),
     );
